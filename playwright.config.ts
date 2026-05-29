@@ -6,10 +6,7 @@ export default defineConfig({
 
   timeout: 30000,
 
-  reporter: [
-    ['list'],
-    ['allure-playwright']
-  ],
+  reporter: [['allure-playwright', { outputFolder: 'allure-results' }]],
 
   use: {
     browserName: 'chromium',
